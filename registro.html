@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - LaLiga</title>
+    <link rel="icon" href="imágenes\laliga_logo.ico">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            text-shadow: 2px 2px 1px black;
+            margin: 20px;
+        }
+    </style>
+    <div>
+        <header>
+            <div>
+                <a href="index.html"><img id="logo" src="imágenes\laliga_logo.png" alt="logo laliga" /></a>
+                <hr />
+                <br>
+                <nav>
+                    <a id="inicio" href="index.html">INICIO</a>
+                    <a id="clasificación" href="clasificación.html">CLASIFICACIÓN</a>
+                    <a id="registro" href="#">REGISTRO</a>
+                    <a id="galería" href="galeria.html">GALERÍA</a>
+                    <a id="donde_ver" href="donde_ver.html">DÓNDE VER</a>
+                </nav>
+            </div>
+        </header>
+            <h1 id="registro_f">Registro</h1>
+
+            <!-- Formulario -->
+            <form id="form" action="#" method="get">
+            <label for="name">Nombre:</label><label style="color: red;" for="name"> *</label><br>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required><br><br>
+            <label for="email">Correo electrónico:</label><label style="color: red;" for="name"> *</label><br>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required><br><br>
+            <label for="gender">Sexo:</label><label style="color: red;" for="name"> *</label><br>
+                <input type="radio" name="hm" value="h" required> Hombre
+                <input id="s_mujer" type="radio" name="hm" value="m" required> Mujer <br><br><br>
+            <label for="message">Mensaje:</label><br>
+                <textarea name="Mensaje" id="Mensaje" rows="5" cols="30" placeholder="Escribe aquí un mensaje para tu equipo favorito"></textarea><br><br>
+            <label for="info">¿Desea recibir información?</label>
+                <input type="checkbox" name="yes" value="yes"> Sí<br><br>
+            <label for="equipo">Equipo favorito:</label><label style="color: red;" for="name"> *</label></option><br>
+            <select class="select-gris" name="equipo" id="equipo" required>
+                <option value="" selected disabled>Escoja un equipo
+                <option class="op" value="real">Real Madrid</option>
+                <option class="op" value="barca">Barcelona</option>
+                <option class="op" value="atleti">Atlético de Madrid</option>
+                <option class="op" value="valencia">Valencia</option>
+                <option class="op" value="sevilla">Sevilla</option>
+            </select><br><br>
+                <input type="reset" value="Reestablecer">
+                <input type="submit" value="Registrarse">
+        </form>
+</body>
+</html>

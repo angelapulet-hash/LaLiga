@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Título de la pestaña -->
+    <title>Inicio - LaLiga</title>
+
+    <!-- Logo de la pestaña -->
+    <link rel="icon" href="imágenes\laliga_logo.ico">
+
+    <!-- Relación con css -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- Color, Fuente, Sombras y Margen de las letras en general -->
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            text-shadow: 2px 2px 1px black;
+            margin: 20px;
+        }
+    </style>
+    <div>
+
+        <!-- Cabecera -->
+        <header>
+            <div>
+                <!-- Logo -->
+                <a href="#"><img id="logo" src="imágenes\laliga_logo.png" alt="logo laliga" /></a>
+                <hr/>
+                <br>
+
+                <!-- Menú de navegación entre las distintas páginas -->
+                <nav>
+                    <a id="inicio" href="#">INICIO</a>
+                    <a id="clasificación" href="clasificación.html">CLASIFICACIÓN</a>
+                    <a id="registro" href="registro.html">REGISTRO</a>
+                    <a id="galería" href="galeria.html">GALERÍA</a>
+                    <a id="donde_ver" href="donde_ver.html">DÓNDE VER</a>
+                </nav>
+            </div>
+        </header>
+
+            <!-- Título de la página -->
+            <h1>La Liga</h1>
+
+                <!-- Párrafo con letras en negrita, subrayadas y cursivas -->
+                <p>
+                    <b>La Liga</b> es una de las principales ligas de fútbol de
+                    <u>España</u>, conocida por su alta competitividad y la participación
+                    de algunos de los clubes <i>más destacados</i> del mundo.
+                </p>
+
+            <!-- Subtítulo -->
+            <h2>Equipos de La Liga</h2>
+
+                <!-- Lista ordenada -->
+                <ol>
+                    <li>Real Madrid</li>
+                    <li>Barcelona</li>
+                    <li>Villareal</li>
+                    <li>Betis</li>
+                    <li>Atlético</li>
+                    <li>Sevilla</li>
+                    <li>Elche</li>
+                    <li>Athletic</li>
+                    <li>Espanyol</li>
+                    <li>Alavés</li>
+                </ol>
+            <br>
+
+        <!-- Vídeo de youtube, modificaciones: tamaño, borde blanco quitado, permitir funciones de youtube y pantalla completa -->
+        <iframe class="youtube" 
+            src="https://www.youtube.com/embed/hzR3qPMTQzQ"
+            width="370"
+            height="208.125"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="">
+        </iframe>
+
+        <!-- Localización, modificaciones: tamaño, borde blanco quitado, permitir pantalla completa y la seguridad de la url -->
+        <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.8423580283848!2d-6.0041295!3d37.4172008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126b936aa99ef3%3A0xe0a59b52052890c8!2sEstadio%20La%20Cartuja!5e0!3m2!1ses!2ses!4v1760786815794!5m2!1ses!2ses"
+            width="370"
+            height="208.125"
+            frameborder="0"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <h2>Sitio web oficial de La Liga</h2>
+        <p>
+            Para obtener más información sobre La Liga, puedes visitar su sitio web
+            oficial:
+        </p>
+
+        <!-- Enlace que se abre en otra página (target="_blank") -->
+        <a id="sitio_web" href="https://www.laliga.com/" target="_blank">Sitio web de LaLiga</a>
+    </div>
+    <br>
+    <div class="redes_sociales">
+
+        <!-- Footer con las redes sociales -->
+        <footer>
+            <a href="https://twitter.com/LaLiga" target="_blank"><img id="x" src="imágenes\logo_x.png" alt="logo x" /></a>
+            <a href="https://www.instagram.com/laliga/" target="_blank"><img id="insta" src="imágenes\logo_insta.png" alt="logo insta" /></a>
+            <a href="https://www.tiktok.com/@laliga?lang=es" target="_blank"><img id="face" src="imágenes\logo_tiktok.png" alt="logo face" /></a>
+        </footer>
+    </div>
+</body>
+</html>

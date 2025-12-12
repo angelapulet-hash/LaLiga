@@ -1,0 +1,383 @@
+/* Tamaño y animación fluida */
+#logo{
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom de la animación */
+#logo:hover {
+    transform:scale(1.02);
+}
+
+/* Estilos para los botones */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    position: relative;
+    margin: 0;
+    min-height: 80vh;
+    max-height: 100%;
+    background-image: url("imágenes/laliga_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Edicion del fondo */
+body::before {
+    content: "";
+    position: fixed;
+    width: 102.7%;
+    height: 106%;
+    background: rgba(255, 205, 205, 0.455);
+    margin: -20px;
+    z-index: -1;
+}
+
+/* Tamaños de letras ajustados */
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+ol {
+    font-size: 20px;
+}
+
+/* Línea debajo del logo */
+hr {
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Decoración del link al sitio web de LaLiga */
+#sitio_web {
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(255, 58, 58);
+}
+
+/* Menú de navegación entre las distintas páginas */
+#inicio, #clasificación, #registro, #galería, #donde_ver {
+    font-size:25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 58, 58);
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Zoom de la animación */
+#inicio:hover, #clasificación:hover, #registro:hover, #galería:hover, #donde_ver:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del título de la página de clasificación */
+.t_clasificacion {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos de la tabla de clasificación con animación fluida */
+#tabla_c {
+    margin: auto;
+    text-shadow: 0 0 0;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.773);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom de la animación */
+#tabla_c:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+/* Edición del encabezado de la tabla */
+#tabla_c th {
+    background-color: rgb(255, 84, 84);
+    color: white;
+}
+
+/* Estilo del borde de la tabla */
+#tabla_c {
+    padding: 1px;
+    border-radius: 10px;
+}
+
+/* Estilo de las celdas de la tabla */
+#tabla_c th, td {
+    padding: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Borde de las esquinas del encabezado */
+#tabla_c th.pos {
+    border-top-left-radius: 7px;
+}
+
+#tabla_c th.punt {
+    border-top-right-radius: 7px;
+}
+
+/* Estilo del vídeo de youtube con animación fluida*/
+.youtube {
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo de la ubicación de google maps con animación fluida */
+.maps {
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Zoom de las animaciones */
+.youtube:hover, .maps:hover {
+    transform: scale(1.01);
+}
+
+/* Estilos de las redes sociales */
+#x, #insta, #face {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+    text-shadow: 1.5px 1.5px 1px black;
+}
+
+/* Tamaño de las redes sociales */
+#x, #insta, #face {
+    width: 50px;
+    height: auto;
+}
+
+/* Animación fluida */
+#x, #insta, #face {
+    transition: transform 0.3s ease;
+}
+
+/* Zoom de la animación */
+#x:hover, #insta:hover, #face:hover {
+    transform: scale(1.05);
+}
+
+/* Alineación del texto */
+.redes_sociales {
+    text-align: right;
+}
+
+/* Estilos de las fotos de la galería con animación fluida */
+#foto1, #foto2, #foto3, #foto4, #foto5, #foto6, #foto7, #foto8 {
+    object-position: top;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom de la animación */
+#foto1:hover, #foto2:hover, #foto3:hover, #foto4:hover, #foto5:hover, #foto6:hover, #foto7:hover, #foto8:hover {
+    transform: scale(1.02);
+}
+
+/* Alineación del formulario */
+#registro_f {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+#form {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.773);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    margin: auto;
+}
+
+/* Posición de los botones de Hombre y Mujer */
+input[type="radio"] {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* Estilo de la marca de "Deseo recibir más información" */
+input[type="checkbox"] {
+    margin-left: 20px;
+    scale: 1.2;
+    cursor: pointer;
+}
+
+/* Estilos de los botones de reestablecer y registrarse */
+input[type="reset"], input[type="submit"] {
+    background-color: rgb(255, 84, 84);
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Alineación pegada a la derecha del botón registrarse */
+input[type="submit"] {
+    float: right;
+}
+
+/* Cambio de color al pasar el ratón por encima de los botones */
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: rgb(200, 60, 60);
+}
+
+/* Margen de separación entre los dos sexos */
+#s_mujer {
+    margin-left: 25px;
+}
+
+/* Color gris para la opción inválida */
+.select-gris:invalid {
+    color: rgb(106, 106, 106);
+}
+
+/* Color negro para las opciones válidas */
+.op {
+    color: black;
+}
+
+/* Estilo suave para los cuadros de texto y el de selección */
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Título de Dónde Ver */
+h1.d_v {
+    text-align: center;
+}
+
+/* Estilos de la tabla en general y transición fluida */
+#tabla_donde_ver {
+    background-color: white;
+    border-collapse: collapse;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: auto;
+    color: black;
+    text-shadow: none;
+    border: #cccccc00;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom de la animación */
+#tabla_donde_ver:hover {
+    transform: scale(1.005);
+}
+
+/* Ajustes del encabezado */
+#tabla_donde_ver th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+/* Color del primer encabezado */
+#tabla_donde_ver tr.cabecera {
+    background-color: gainsboro;
+}
+
+/* Ajustes de las celdas */
+#tabla_donde_ver td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+/* Ajustes de los equipos de la izquierda */
+#tabla_donde_ver td.izq {
+    text-align: right;
+    padding-left: 100px;
+}
+
+/* Ajustes de los resultados y VS */
+#tabla_donde_ver td.med {
+    color: red;
+    font-weight: bold;
+}
+
+/* Ajustes de los equipos de la derecha */
+#tabla_donde_ver td.der {
+    text-align: left;
+}
+
+/* Color de filas intercaladas */
+#tabla_donde_ver tr.uno {
+    background-color: rgb(242, 242, 242);
+}
+
+/* Bordes de la tabla de Dónde Ver */
+#tabla_donde_ver th.enc {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#tabla_donde_ver td.lun {
+    border-bottom-left-radius: 5px;
+}
+
+#tabla_donde_ver td.der {
+    border-bottom-right-radius: 5px;
+}
